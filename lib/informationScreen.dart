@@ -1,70 +1,74 @@
 import 'package:flutter/material.dart';
 
-class informationScreen extends StatelessWidget {
-  final List<String> leftColumnTexts = [
-    'eee',
-    'rr',
-    'mnkk',
-    'mnkk',
+class InformationScreen extends StatefulWidget {
+  @override
+  _InformationScreenState createState() => _InformationScreenState();
+}
+
+class _InformationScreenState extends State<InformationScreen> {
+  List<String> itemList = [
+    'addis abeba',
+    'adama',
+    'bishoftu',
+    'hawasa',
+    'Gonder',
   ];
 
+  List<String> filteredList = [];
+
+  @override
+  void initState() {
+    super.initState();
+    filteredList.addAll(itemList);
+  }
+
+  void filterItems(String query) {
+    filteredList.clear();
+    if (query.isNotEmpty) {
+      itemList.forEach((item) {
+        if (item.toLowerCase().contains(query.toLowerCase())) {
+          filteredList.add(item);
+        }
+      });
+    } else {
+      filteredList.addAll(itemList);
+    }
+    setState(() {});
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_left),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-        ),
-        title: SearchBar(),
+        title: Text('Information Guide'),
       ),
-      body: Row(children: [
-        Expanded(
-          child: ListView.builder(
-            itemCount: leftColumnTexts.length,
-            itemBuilder: (context, index) {
-              final text = leftColumnTexts[index];
-              return ListTile(
-                title: Text(text),
-              );
-            },
+      body: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              onChanged: filterItems,
+              decoration: InputDecoration(
+                labelText: 'Search',
+              ),
+            ),
           ),
-        ),
-      ]),
-    ));
-  }
-}
-
-class SearchBar extends StatefulWidget {
-  @override
-  _SearchBarState createState() => _SearchBarState();
-}
-
-class _SearchBarState extends State<SearchBar> {
-  TextEditingController _searchController = TextEditingController();
-
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      controller: _searchController,
-      decoration: InputDecoration(
-        hintText: 'Search',
-        suffixIcon: IconButton(
-          icon: Icon(Icons.clear),
-          onPressed: () {
-            _searchController.clear();
-          },
-        ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: filteredList.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(filteredList[index]),
+                );
+              },
+            ),
+          ),
+        ],
       ),
-      onSubmitted: (value) {},
     );
   }
 }
+
+void main() => runApp(MaterialApp(
+      home: InformationScreen(),
+    ));

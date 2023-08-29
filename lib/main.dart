@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:helper/FireScreen.dart';
-import 'package:helper/informationScreen.dart';
-import 'package:helper/symptoms.dart';
+import 'package:helper/InformationScreen.dart';
+
+import 'package:helper/SymptomScreen.dart';
 import 'welcome.dart';
 
 void main() {
@@ -73,7 +74,8 @@ class HomePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => symptoms()),
+                        MaterialPageRoute(
+                            builder: (context) => SymptomScreen()),
                       );
                     },
                     child: Text('ምልክቶች'),
@@ -86,7 +88,7 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                            builder: (context) => informationScreen()),
+                            builder: (context) => InformationScreen()),
                       );
                     },
                     child: Text(' ለ ልብ ድካም'),

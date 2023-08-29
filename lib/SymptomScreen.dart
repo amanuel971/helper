@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ListViewWithSearch extends StatefulWidget {
+class SymptomScreen extends StatefulWidget {
   @override
-  _ListViewWithSearchState createState() => _ListViewWithSearchState();
+  _SymptomScreenState createState() => _SymptomScreenState();
 }
 
-class _ListViewWithSearchState extends State<ListViewWithSearch> {
+class _SymptomScreenState extends State<SymptomScreen> {
   List<String> itemList = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    // ... add more items
+    'String',
+    'Something',
+    'anything',
+    'somebody',
+    'nobody',
   ];
 
   List<String> filteredList = [];
@@ -41,7 +40,7 @@ class _ListViewWithSearchState extends State<ListViewWithSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ListView with Search'),
+        title: Text('Symptoms'),
       ),
       body: Column(
         children: <Widget>[
@@ -69,7 +68,3 @@ class _ListViewWithSearchState extends State<ListViewWithSearch> {
     );
   }
 }
-
-void main() => runApp(MaterialApp(
-      home: ListViewWithSearch(),
-    ));

@@ -1,111 +1,107 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class FireScreen extends StatelessWidget {
-  final List<String> leftColumnTexts = [
-    'eee',
-    'rr',
-    'mnkk',
+class FireScreen extends StatefulWidget {
+  @override
+  _FireScreenState createState() => _FireScreenState();
+}
+
+class _FireScreenState extends State<FireScreen> {
+  List<String> itemList = [
+    'addis abeba',
+    'adama',
+    'bishoftu',
+    'hawasa',
+    'Gonder',
   ];
 
   final List<String> rightColumnTexts = [
     '9000',
     '0090',
     '89989',
-    '',
-    '',
-    '',
-    '',
+    '58',
     '',
   ];
 
+  List<String> filteredList = [];
+
+  @override
+  void initState() {
+    super.initState();
+    filteredList.addAll(itemList);
+  }
+
+  void filterItems(String query) {
+    filteredList.clear();
+    if (query.isNotEmpty) {
+      itemList.forEach((item) {
+        if (item.toLowerCase().contains(query.toLowerCase())) {
+          filteredList.add(item);
+        }
+      });
+    } else {
+      filteredList.addAll(itemList);
+    }
+    setState(() {});
+  }
+
+  void _showToast(BuildContext context) {
+    final scaffold = ScaffoldMessenger.of(context);
+    scaffold.showSnackBar(
+      SnackBar(
+        content: const Text('Number copied!'),
+        action: SnackBarAction(
+            label: 'okay', onPressed: scaffold.hideCurrentSnackBar),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_left),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Fire time call '),
+      ),
+      body: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              onChanged: filterItems,
+              decoration: InputDecoration(
+                labelText: 'Search',
+              ),
+            ),
           ),
-          backgroundColor: Colors.red,
-          title: Text('Fire accident time emergency calls'),
-        ),
-        body: Row(
-          children: [
-            Expanded(
-              child: ListView.builder(
-                itemCount: leftColumnTexts.length,
-                itemBuilder: (context, index) {
-                  final text = leftColumnTexts[index];
-                  return ListTile(
-                    title: Text(text),
-                  );
-                },
-              ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: filteredList.length,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(filteredList[index]),
+                      InkWell(
+                        onTap: () async {
+                          await Clipboard.setData(
+                              ClipboardData(text: rightColumnTexts[index]));
+                          _showToast(context);
+                        },
+                        child: Text(
+                          rightColumnTexts[index],
+                          style: TextStyle(color: Colors.blue),
+                        ),
+                      )
+                    ],
+                  ),
+                );
+              },
             ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: rightColumnTexts.length,
-                itemBuilder: (context, index) {
-                  final text = rightColumnTexts[index];
-                  return InkWell(
-                    onTap: () async {
-                      await Clipboard.setData(ClipboardData(text: text));
-                    },
-                    child: ListTile(
-                      title: Text(text),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
 }
-
-
-// class FireScreen extends StatelessWidget {
-//   final List<String> rightColumnTexts = [
-//     ' A',
-//     ' B',
-//     ' C',
-//   ];
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Text('Copy Text to your phone'),
-//         ),
-//         body: ListView.builder(
-//           itemCount: rightColumnTexts.length,
-//           itemBuilder: (context, index) {
-//             final text = rightColumnTexts[index];
-//             return ListTile(
-//               title: Text(text),
-//               onTap: () {
-//                 _copyToClipboard(text);
-//                 ScaffoldMessenger.of(context).showSnackBar(
-//                   SnackBar(
-//                     content: Text('Text copied to yourphone'),
-//                   ),
-//                 );
-//               },
-//             );
-//           },
-//         ),
-//       ),
-//     );
-//   }
-
-//   void _copyToClipboard(String text) {
-//     Clipboard.setData(ClipboardData(text: text));
-//   }
-// }

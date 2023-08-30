@@ -68,7 +68,3 @@ class _InformationScreenState extends State<InformationScreen> {
     );
   }
 }
-
-void main() => runApp(MaterialApp(
-      home: InformationScreen(),
-    ));

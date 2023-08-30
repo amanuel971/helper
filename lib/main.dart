@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:helper/FireScreen.dart';
-import 'package:helper/InformationScreen.dart';
+import 'package:helper/firstScreen.dart';
+import 'package:helper/HomeScreen.dart';
 
 import 'package:helper/SymptomScreen.dart';
-import 'welcome.dart';
+import 'package:helper/welcome.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -15,17 +15,23 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(133, 0, 0, 0),
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Home Page'),
-      ),
+          backgroundColor: Colors.blueGrey,
+          title: Text('Home Page'),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back_ios),
+          )),
       body: Column(
         children: [
           Text(
             ' This HELPER is used to get information about emergency time helping for some body , and to get phone number to call emergency time  Government sectors.',
             style: TextStyle(fontSize: 20),
           ),
-          SizedBox(height: 40),
+          SizedBox(height: 80),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -34,38 +40,10 @@ class HomePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => FireScreen()),
+                        MaterialPageRoute(builder: (context) => firstScreen()),
                       );
                     },
-                    child: Text('የእሳት አደጋ ጥሪዎች'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('የአምቡላንስ ጥሪ'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('የፖሊስ ጣቢያ ጥሪዎች'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('የውሃ ልማት ጥሪዎች'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('የethiotelecom ጥሪዎች'),
+                    child: Text('የአደጋ ጊዜ ጥሪዎች'),
                   ),
                 ],
               ),
@@ -87,53 +65,10 @@ class HomePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (context) => InformationScreen()),
+                        MaterialPageRoute(builder: (context) => HomeScreen()),
                       );
                     },
-                    child: Text(' ለ ልብ ድካም'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('ለ ደም ማነስ'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('ለ ደም ግፊት'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('ለ ደም ብዛት'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('ለ ሚጥል በሽታ'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('ለ ስኳር በሽታ'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text('ለ ሆድ  ህመም'),
+                    child: Text('የመረጃ መመሪያ'),
                   ),
                 ],
               ),

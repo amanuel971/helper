@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class FireScreen extends StatefulWidget {
+class ambulancScreen extends StatefulWidget {
   @override
-  _FireScreenState createState() => _FireScreenState();
+  _ambulancScreenState createState() => _ambulancScreenState();
 }
 
-class _FireScreenState extends State<FireScreen> {
+class _ambulancScreenState extends State<ambulancScreen> {
   List<String> itemList = [
     'addis abeba',
     'adama',
@@ -60,7 +60,7 @@ class _FireScreenState extends State<FireScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fire time call'),
+        title: Text('ambulans call'),
       ),
       body: Column(
         children: <Widget>[

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helper/heartScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -6,7 +7,7 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('Information Guid'),
+            title: Text('Information Guide'),
             leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -31,9 +32,13 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'Button 1',
+              text: ' heart failure',
               color: Colors.blue,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => heartScreen()),
+                );
+              },
             ),
             CustomButton(
               text: 'Button 2',

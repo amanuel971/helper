@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:helper/FireScreen.dart';
+import 'package:helper/ambulancScreen.dart';
+import 'package:helper/ethiotelScreen.dart';
+import 'package:helper/policeScreen.dart';
+import 'package:helper/powerScreen.dart';
 
 class firstScreen extends StatelessWidget {
   @override
@@ -31,22 +36,30 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'Button 1',
+              text: 'fire call',
               color: Colors.blue,
-              onPressed: () {},
-            ),
-            CustomButton(
-              text: 'Button 2',
-              color: Colors.green,
               onPressed: () {
-                // Add button 2 functionality
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => FireScreen()),
+                );
               },
             ),
             CustomButton(
-              text: 'Button 3',
+              text: 'ambulance call',
+              color: Colors.green,
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ambulancScreen()),
+                );
+              },
+            ),
+            CustomButton(
+              text: 'police station call',
               color: Colors.orange,
               onPressed: () {
-                // Add button 3 functionality
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => policeScreen()),
+                );
               },
             ),
           ],
@@ -56,31 +69,28 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'Button 4',
+              text: 'ethiotelecom call',
               color: Colors.red,
               onPressed: () {
-                // Add button 4 functionality
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ethiotelScreen()),
+                );
               },
             ),
             CustomButton(
-              text: 'Button 5',
+              text: 'power station call',
               color: Colors.purple,
               onPressed: () {
-                // Add button 5 functionality
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => powerScreen()),
+                );
               },
             ),
             CustomButton(
-              text: 'Button 6',
+              text: 'trafic station call',
               color: Colors.yellow,
               onPressed: () {
                 // Add button 6 functionality
-              },
-            ),
-            CustomButton(
-              text: 'Button 7',
-              color: Colors.teal,
-              onPressed: () {
-                // Add button 7 functionality
               },
             ),
           ],

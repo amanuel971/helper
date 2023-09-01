@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:helper/Animiya.dart';
-import 'package:helper/Asthma.dart';
-import 'package:helper/BloodcountScreen.dart';
-import 'package:helper/DiabetesScreen.dart';
-import 'package:helper/EpilepsyScreen.dart';
-import 'package:helper/bloodScreen.dart';
-import 'package:helper/heartScreen.dart';
+import 'package:helper/anemiasymptom.dart';
+import 'package:helper/asthmasymptom.dart';
+import 'package:helper/bloodcsymptom.dart';
+import 'package:helper/bloodpsymptoms.dart';
+import 'package:helper/diabetsymptom.dart';
+import 'package:helper/epilepsysymptom.dart';
+import 'package:helper/heartsymptom.dart';
 
-class HomeScreen extends StatelessWidget {
+class symptom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('Information Guide'),
+            title: Text('SYMPTOMS'),
             leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -42,7 +42,7 @@ class ButtonLayout extends StatelessWidget {
               color: Colors.blue,
               onPressed: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => heartScreen()),
+                  MaterialPageRoute(builder: (context) => heartsymptom()),
                 );
               },
             ),
@@ -51,16 +51,16 @@ class ButtonLayout extends StatelessWidget {
               color: Colors.green,
               onPressed: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => bloodScren()),
+                  MaterialPageRoute(builder: (context) => bloodpsymptoms()),
                 );
               },
             ),
             CustomButton(
-              text: 'Animiya',
+              text: 'Anemia',
               color: Colors.orange,
               onPressed: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => Animiya()),
+                  MaterialPageRoute(builder: (context) => anemiasymptom()),
                 );
               },
             ),
@@ -74,8 +74,8 @@ class ButtonLayout extends StatelessWidget {
               text: 'Blood count',
               color: Colors.red,
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => BloodcountScreen()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => bloodcsymptom()));
               },
             ),
             CustomButton(
@@ -83,7 +83,7 @@ class ButtonLayout extends StatelessWidget {
               color: Colors.purple,
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => EpilepsyScreen()));
+                    MaterialPageRoute(builder: (context) => epilepsysymptom()));
               },
             ),
             CustomButton(
@@ -91,15 +91,15 @@ class ButtonLayout extends StatelessWidget {
               color: Colors.yellow,
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => DiabetesScreen()));
+                    MaterialPageRoute(builder: (context) => diabetsymptom()));
               },
             ),
             CustomButton(
               text: 'Asthma',
               color: Colors.teal,
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Asthma()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => asthmasymptom()));
               },
             ),
           ],

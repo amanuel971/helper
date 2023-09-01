@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:helper/firstScreen.dart';
 import 'package:helper/HomeScreen.dart';
 
-import 'package:helper/SymptomScreen.dart';
+import 'package:helper/Symptom.dart';
 import 'package:helper/welcome.dart';
 
 void main() {
@@ -27,6 +27,9 @@ class HomePage extends StatelessWidget {
           )),
       body: Column(
         children: [
+          SizedBox(
+            height: 20,
+          ),
           Text(
             ' This HELPER is used to get information about emergency time helping for some body , and to get phone number to call emergency time  Government sectors.',
             style: TextStyle(fontSize: 20),
@@ -52,8 +55,7 @@ class HomePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(
-                            builder: (context) => SymptomScreen()),
+                        MaterialPageRoute(builder: (context) => symptom()),
                       );
                     },
                     child: Text('ምልክቶች'),

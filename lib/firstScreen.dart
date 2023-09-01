@@ -45,7 +45,7 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'ambulance call',
+              text: 'ambulance  call',
               color: Colors.green,
               onPressed: () {
                 Navigator.of(context).push(
@@ -89,9 +89,7 @@ class ButtonLayout extends StatelessWidget {
             CustomButton(
               text: 'trafic station call',
               color: Colors.yellow,
-              onPressed: () {
-                // Add button 6 functionality
-              },
+              onPressed: () {},
             ),
           ],
         ),

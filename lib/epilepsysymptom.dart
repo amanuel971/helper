@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-class SymptomScreen extends StatefulWidget {
+class epilepsysymptom extends StatefulWidget {
   @override
-  _SymptomScreenState createState() => _SymptomScreenState();
+  _epilepsysymptomState createState() => _epilepsysymptomState();
 }
 
-class _SymptomScreenState extends State<SymptomScreen> {
+class _epilepsysymptomState extends State<epilepsysymptom> {
   List<String> itemList = [
     'String',
     'Something',
     'anything',
     'somebody',
     'nobody',
+    'ራስ',
   ];
 
   List<String> filteredList = [];
@@ -40,7 +41,7 @@ class _SymptomScreenState extends State<SymptomScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Symptoms'),
+        title: Text('Symptoms of epilepsy'),
       ),
       body: Column(
         children: <Widget>[

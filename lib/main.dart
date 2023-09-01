@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => symptom()),
+                        MaterialPageRoute(builder: (context) => Symptom()),
                       );
                     },
                     child: Text('ምልክቶች'),

@@ -1,139 +1,112 @@
 import 'package:flutter/material.dart';
-import 'package:helper/anemiasymptom.dart';
-import 'package:helper/asthmasymptom.dart';
-import 'package:helper/bloodcsymptom.dart';
-import 'package:helper/bloodpsymptoms.dart';
-import 'package:helper/diabetsymptom.dart';
-import 'package:helper/epilepsysymptom.dart';
-import 'package:helper/heartsymptom.dart';
 
-class symptom extends StatelessWidget {
+class Symptom extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-            title: Text('SYMPTOMS'),
-            leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Icon(Icons.arrow_back_ios),
-            )),
-        body: Center(
-          child: ButtonLayout(),
-        ),
-      ),
-    );
-  }
+  _SymptomState createState() => _SymptomState();
 }
 
-class ButtonLayout extends StatelessWidget {
+class _SymptomState extends State<Symptom> {
+  List<String> itemList = [
+    '1.የ ልብ ድካም ',
+    '[የትንፋሽ ማጠር]',
+    '[ድካም እና ድክመት]',
+    '[በእግር፣ በቁርጭምጭሚት ላይ እብጠት]',
+    '[ፈጣን ወይም መደበኛ ያልሆነ የልብ ምት]',
+    '[የማያቋርጥ ሳል ወይም የትንፋሽ ማፍሰሻ]',
+    '[የአካል ብቃት እንቅስቃሴን መቻቻል መቀነስ]',
+    '[ክብደት መጨመር]',
+    '2,ደም ግፊት',
+    '[ራስ ምታት]',
+    '[ማዞር ]',
+    '[የዓይን ብዥታ]',
+    '[የደረት ሕመም]',
+    '[ትንፋሽ ማጠር]',
+    '[ድካም ወይም ድክመት]',
+    '[የአፍንጫ ደም መፍሰስ]',
+    '3,ደም ማነስ',
+    '[ራስ ምታት]',
+    '[ማዞር ወይም ራስ ምታት]',
+    '[የዓይን ብዥታ]',
+    '[የደረት ሕመም]',
+    '[የትንፋሽ ማጠር]',
+    '[ድካም ወይም ድክመት]',
+    '[የአፍንጫ ደም መፍሰስ]',
+    '4.የስኳር በሽታ',
+    '[በተደጋጋሚ የሽንት መሽናት]',
+    '[ከመጠን በላይ ጥማት]',
+    '[ያልታወቀ ክብደት መቀነስ]',
+    '[ረሃብ መጨመር]',
+    '[ድካም እና ድክመት]',
+    '[ቁስሎችን ቀስ በቀስ ማዳን]',
+    '[ብዥ ያለ እይታ]',
+    '[መደንዘዝ ወይም መንቀጥቀጥ]',
+    '[ተደጋጋሚ ኢንፌክሽኖች]',
+    '5,ደም ብዛት',
+    '[ኢንፌክሽኖች]',
+    '[መድማት ወይም መሰባበር]',
+    '[እብጠት ወይም ራስን የመከላከል ሁኔታዎች]',
+    '[የደም መዛባቶች]',
+    '6.የሚጥል በሽታ',
+    '[የንቃተ ህሊና መሳት]',
+    '[የመናድ ችግር]',
+    '[የትኩረት መናድ]',
+    '[ የእይታ መዛባት]',
+    '[የንቃተ ህሊና ማጣት]',
+    '[ግራ መጋባት ወይም የማስታወስ ችግር]',
+    '[ መኮማተር ና መደንዘዝ]',
+  ];
+
+  List<String> filteredList = [];
+
   @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            CustomButton(
-              text: ' heart failure',
-              color: Colors.blue,
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => heartsymptom()),
-                );
-              },
-            ),
-            CustomButton(
-              text: 'Blood presure',
-              color: Colors.green,
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => bloodpsymptoms()),
-                );
-              },
-            ),
-            CustomButton(
-              text: 'Anemia',
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => anemiasymptom()),
-                );
-              },
-            ),
-          ],
-        ),
-        SizedBox(height: 16),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            CustomButton(
-              text: 'Blood count',
-              color: Colors.red,
-              onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => bloodcsymptom()));
-              },
-            ),
-            CustomButton(
-              text: 'Epilepsy',
-              color: Colors.purple,
-              onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => epilepsysymptom()));
-              },
-            ),
-            CustomButton(
-              text: 'Diabetes',
-              color: Colors.yellow,
-              onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => diabetsymptom()));
-              },
-            ),
-            CustomButton(
-              text: 'Asthma',
-              color: Colors.teal,
-              onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => asthmasymptom()));
-              },
-            ),
-          ],
-        ),
-      ],
-    );
+  void initState() {
+    super.initState();
+    filteredList.addAll(itemList);
   }
-}
 
-class CustomButton extends StatelessWidget {
-  final String text;
-  final Color color;
-  final VoidCallback onPressed;
-
-  const CustomButton({
-    required this.text,
-    required this.color,
-    required this.onPressed,
-  });
+  void filterItems(String query) {
+    filteredList.clear();
+    if (query.isNotEmpty) {
+      itemList.forEach((item) {
+        if (item.toLowerCase().contains(query.toLowerCase())) {
+          filteredList.add(item);
+        }
+      });
+    } else {
+      filteredList.addAll(itemList);
+    }
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        primary: color,
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: Text('Symptoms of heart failuer'),
       ),
-      child: Text(
-        text,
-        style: TextStyle(fontSize: 16),
+      body: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              onChanged: filterItems,
+              decoration: InputDecoration(
+                labelText: 'Search',
+              ),
+            ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: filteredList.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(filteredList[index]),
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }

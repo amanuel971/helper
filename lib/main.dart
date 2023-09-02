@@ -4,6 +4,7 @@ import 'package:helper/HomeScreen.dart';
 
 //import 'package:helper/Symptom.dart';
 import 'package:helper/welcome.dart';
+import 'package:helper/MarkDownPage.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -54,9 +55,15 @@ class HomePage extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(builder: (context) => Symptom()),
-                      // );
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) {
+                          return const MarkDownPage(
+                            //mdName: 'apple.md',
+                            mdName: 'symptom.md',
+                            title: 'symptom',
+                          );
+                        },
+                      ));
                     },
                     child: Text('ምልክቶች'),
                   ),

@@ -35,33 +35,53 @@ class ButtonLayout extends StatelessWidget {
               text: ' heart failure',
               color: Colors.blue,
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => heartScreen()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'heartfailuer.md',
+                      title: 'heartfailuer',
+                    );
+                  },
+                ));
+                ;
               },
             ),
             CustomButton(
               text: 'Blood presure',
               color: Colors.green,
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => bloodScren()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'bloodpressuer.md',
+                      title: 'bloodpressuer',
+                    );
+                  },
+                ));
+                ;
               },
             ),
             CustomButton(
-              text: 'Animiya',
+              text: 'Anemia',
               color: Colors.orange,
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => Animiya()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'Anemia.md',
+                      title: 'Anemia',
+                    );
+                  },
+                ));
               },
             ),
             CustomButton(text: "Flu", color: Colors.brown, onPressed: () {})
           ],
         ),
-        // SizedBox(height: 16),
+        SizedBox(height: 10),
         Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -69,16 +89,23 @@ class ButtonLayout extends StatelessWidget {
               text: 'Blood count',
               color: Colors.red,
               onPressed: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //     builder: (context) => BloodcountScreen()));
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'bloodcount.md',
+                      title: 'bloodcount',
+                    );
+                  },
+                ));
               },
             ),
             CustomButton(
               text: 'Epilepsy',
               color: Colors.purple,
               onPressed: () {
-                // Navigator.of(context).push(
-                //     MaterialPageRoute(builder: (context) => EpilepsyScreen()));
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => MarkDownPage(mdName: 'Eplipesy.md')));
               },
             ),
             CustomButton(
@@ -87,7 +114,7 @@ class ButtonLayout extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return MarkDownPage(
+                    return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'diabets.md',
                       title: 'diabetes',
@@ -100,8 +127,15 @@ class ButtonLayout extends StatelessWidget {
               text: 'Asthma',
               color: Colors.teal,
               onPressed: () {
-                // Navigator.of(context)
-                //     .push(MaterialPageRoute(builder: (context) => Asthma()));
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'Asthema.md',
+                      title: 'Asthema',
+                    );
+                  },
+                ));
               },
             ),
           ],
@@ -135,7 +169,7 @@ class CustomButton extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(fontSize: 16),
+        style: TextStyle(fontSize: 10),
       ),
     );
   }

@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:helper/Animiya.dart';
-import 'package:helper/Asthma.dart';
-import 'package:helper/BloodcountScreen.dart';
-import 'package:helper/DiabetesScreen.dart';
-import 'package:helper/EpilepsyScreen.dart';
-import 'package:helper/bloodScreen.dart';
-import 'package:helper/heartScreen.dart';
+import 'package:helper/MarkDownPage.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -31,75 +25,83 @@ class HomeScreen extends StatelessWidget {
 class ButtonLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
+        Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
               text: ' heart failure',
               color: Colors.blue,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => heartScreen()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => heartScreen()),
+                // );
               },
             ),
             CustomButton(
               text: 'Blood presure',
               color: Colors.green,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => bloodScren()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => bloodScren()),
+                // );
               },
             ),
             CustomButton(
               text: 'Animiya',
               color: Colors.orange,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => Animiya()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => Animiya()),
+                // );
               },
             ),
+            CustomButton(text: "Flu", color: Colors.brown, onPressed: () {})
           ],
         ),
-        SizedBox(height: 16),
-        Row(
+        // SizedBox(height: 16),
+        Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
               text: 'Blood count',
               color: Colors.red,
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => BloodcountScreen()));
+                // Navigator.of(context).push(MaterialPageRoute(
+                //     builder: (context) => BloodcountScreen()));
               },
             ),
             CustomButton(
               text: 'Epilepsy',
               color: Colors.purple,
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => EpilepsyScreen()));
+                // Navigator.of(context).push(
+                //     MaterialPageRoute(builder: (context) => EpilepsyScreen()));
               },
             ),
             CustomButton(
               text: 'Diabetes',
               color: Colors.yellow,
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => DiabetesScreen()));
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'diabets.md',
+                      title: 'diabetes',
+                    );
+                  },
+                ));
               },
             ),
             CustomButton(
               text: 'Asthma',
               color: Colors.teal,
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => Asthma()));
+                // Navigator.of(context)
+                //     .push(MaterialPageRoute(builder: (context) => Asthma()));
               },
             ),
           ],

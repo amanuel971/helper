@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:helper/firstScreen.dart';
 import 'package:helper/HomeScreen.dart';
 
-import 'package:helper/Symptom.dart';
+//import 'package:helper/Symptom.dart';
 import 'package:helper/welcome.dart';
 
 void main() {
@@ -54,9 +54,9 @@ class HomePage extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => Symptom()),
-                      );
+                      // Navigator.of(context).push(
+                      //   MaterialPageRoute(builder: (context) => Symptom()),
+                      // );
                     },
                     child: Text('ምልክቶች'),
                   ),

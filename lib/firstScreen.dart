@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:helper/FireScreen.dart';
-import 'package:helper/ambulancScreen.dart';
-import 'package:helper/ethiotelScreen.dart';
-import 'package:helper/policeScreen.dart';
-import 'package:helper/powerScreen.dart';
 
 class firstScreen extends StatelessWidget {
   @override
@@ -39,27 +34,27 @@ class ButtonLayout extends StatelessWidget {
               text: 'fire call',
               color: Colors.blue,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => FireScreen()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => FireScreen()),
+                // );
               },
             ),
             CustomButton(
               text: 'ambulance  call',
               color: Colors.green,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => ambulancScreen()),
-                );
+                // Navigator.of(context).push(
+                //    MaterialPageRoute(builder: (context) => ambulancScreen()),
+                // );
               },
             ),
             CustomButton(
               text: 'police station call',
               color: Colors.orange,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => policeScreen()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => policeScreen()),
+                // );
               },
             ),
           ],
@@ -72,18 +67,18 @@ class ButtonLayout extends StatelessWidget {
               text: 'ethiotelecom call',
               color: Colors.red,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => ethiotelScreen()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => ethiotelScreen()),
+                // );
               },
             ),
             CustomButton(
               text: 'power station call',
               color: Colors.purple,
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => powerScreen()),
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(builder: (context) => powerScreen()),
+                // );
               },
             ),
             CustomButton(

@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('Information Guide'),
+            title: Text('የመረጃ መመሪያ'),
             leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -32,7 +32,7 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: ' heart failure',
+              text: 'ለልብ ድካም',
               color: Colors.blue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -40,7 +40,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'heartfailuer.md',
-                      title: 'heartfailuer',
+                      title: 'ለልብ ድካም',
                     );
                   },
                 ));
@@ -48,7 +48,7 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'Blood presure',
+              text: 'ለደም ግፊት',
               color: Colors.green,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -56,7 +56,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'bloodpressuer.md',
-                      title: 'bloodpressuer',
+                      title: 'ለደም ግፊት',
                     );
                   },
                 ));
@@ -64,7 +64,7 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'Anemia',
+              text: 'ለደም ማነስ',
               color: Colors.orange,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -72,21 +72,20 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'Anemia.md',
-                      title: 'Anemia',
+                      title: 'ለደም ማነስ',
                     );
                   },
                 ));
               },
             ),
-            CustomButton(text: "Flu", color: Colors.brown, onPressed: () {})
           ],
         ),
-        SizedBox(height: 10),
+        SizedBox(height: 16),
         Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'Blood count',
+              text: 'ለደም ብዛት',
               color: Colors.red,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -94,22 +93,29 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'bloodcount.md',
-                      title: 'bloodcount',
+                      title: 'ለደም ብዛት',
                     );
                   },
                 ));
               },
             ),
             CustomButton(
-              text: 'Epilepsy',
+              text: 'ለሚጥል በሽታ',
               color: Colors.purple,
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => MarkDownPage(mdName: 'Eplipesy.md')));
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'Eplipesy.md',
+                      title: 'ለሚጥል በሽታ',
+                    );
+                  },
+                ));
               },
             ),
             CustomButton(
-              text: 'Diabetes',
+              text: 'ለስኳር በሽታ',
               color: Colors.yellow,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -117,14 +123,14 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'diabets.md',
-                      title: 'diabetes',
+                      title: 'ለስኳር በሽታ',
                     );
                   },
                 ));
               },
             ),
             CustomButton(
-              text: 'Asthma',
+              text: 'ለአስም',
               color: Colors.teal,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -132,7 +138,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'Asthema.md',
-                      title: 'Asthema',
+                      title: 'ለአስም',
                     );
                   },
                 ));

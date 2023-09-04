@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helper/MarkDownPage.dart';
 
 class firstScreen extends StatelessWidget {
   @override
@@ -6,7 +7,7 @@ class firstScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('Emergency Time call'),
+            title: Text('የአደጋ ጊዜ ጥሪዎች'),
             leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -24,67 +25,94 @@ class firstScreen extends StatelessWidget {
 class ButtonLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
+        Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'fire call',
+              text: ' የእሳት አደጋ ጊዜ ጥሪዎች',
               color: Colors.blue,
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => FireScreen()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'firecall.md',
+                      title: 'የእሳት አደጋ ጊዜ ጥሪዎች',
+                    );
+                  },
+                ));
+                ;
               },
             ),
             CustomButton(
-              text: 'ambulance  call',
+              text: 'የአንቡላንስ ጥሪዎች',
               color: Colors.green,
               onPressed: () {
-                // Navigator.of(context).push(
-                //    MaterialPageRoute(builder: (context) => ambulancScreen()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'ambulance.md',
+                      title: 'የአንቡላንስ ጥሪዎች',
+                    );
+                  },
+                ));
+                ;
               },
             ),
             CustomButton(
-              text: 'police station call',
+              text: 'የፖሊስ ጣቢያ ጥሪዎች',
               color: Colors.orange,
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => policeScreen()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'policestation.md',
+                      title: 'የፖሊስ ጣቢያ ጥሪዎች',
+                    );
+                  },
+                ));
               },
             ),
           ],
         ),
         SizedBox(height: 16),
-        Row(
+        Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'ethiotelecom call',
+              text: 'የመብራት ሀይል ጥሪዎች',
               color: Colors.red,
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => ethiotelScreen()),
-                // );
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'powerstation.md',
+                      title: 'የመብራት ሀይል ጥሪዎች',
+                    );
+                  },
+                ));
               },
             ),
             CustomButton(
-              text: 'power station call',
-              color: Colors.purple,
-              onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (context) => powerScreen()),
-                // );
-              },
-            ),
-            CustomButton(
-              text: 'trafic station call',
+              text: 'የethio telecom ጥሪዎች',
               color: Colors.yellow,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'ethiotelecom.md',
+                      title: 'የethio telecom ጥሪዎች',
+                    );
+                  },
+                ));
+              },
             ),
           ],
         ),
@@ -117,7 +145,7 @@ class CustomButton extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(fontSize: 16),
+        style: TextStyle(fontSize: 10),
       ),
     );
   }

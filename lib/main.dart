@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                           return const MarkDownPage(
                             //mdName: 'apple.md',
                             mdName: 'symptom.md',
-                            title: 'symptom',
+                            title: 'ምልክቶች',
                           );
                         },
                       ));

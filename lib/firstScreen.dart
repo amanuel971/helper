@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:helper/ambulanccall.dart';
+import 'package:helper/ethiotelecomcall.dart';
+import 'package:helper/firecall.dart';
+import 'package:helper/policecall.dart';
+import 'package:helper/powercall.dart';
 
 class firstScreen extends StatelessWidget {
   @override
@@ -35,16 +39,10 @@ class ButtonLayout extends StatelessWidget {
               text: ' የእሳት አደጋ ጊዜ ጥሪዎች',
               color: Colors.blue,
               onPressed: () {
-                // Navigator.push(context, MaterialPageRoute(
-                //   builder: (context) {
-                //     return const MarkDownPage(
-                //       //mdName: 'apple.md',
-                //       mdName: 'firecall.md',
-                //       title: 'የእሳት አደጋ ጊዜ ጥሪዎች',
-                //     );
-                //   },
-                // ));
-                // ;
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => firecall()),
+                );
               },
             ),
             CustomButton(
@@ -60,7 +58,12 @@ class ButtonLayout extends StatelessWidget {
             CustomButton(
               text: 'የፖሊስ ጣቢያ ጥሪዎች',
               color: Colors.orange,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => policecall()),
+                );
+              },
             ),
           ],
         ),
@@ -71,21 +74,21 @@ class ButtonLayout extends StatelessWidget {
             CustomButton(
               text: 'የመብራት ሀይል ጥሪዎች',
               color: Colors.red,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => powercall()),
+                );
+              },
             ),
             CustomButton(
               text: 'የethio telecom ጥሪዎች',
               color: Colors.yellow,
               onPressed: () {
-                // Navigator.push(context, MaterialPageRoute(
-                //   builder: (context) {
-                //     return const MarkDownPage(
-                //       //mdName: 'apple.md',
-                //       mdName: 'ethiotelecom.md',
-                //       title: 'የethio telecom ጥሪዎች',
-                //     );
-                //   },
-                // ));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ethiotelecomcall()),
+                );
               },
             ),
           ],
@@ -98,7 +101,7 @@ class ButtonLayout extends StatelessWidget {
 class CustomButton extends StatelessWidget {
   final String text;
   final Color color;
-  final VoidCallback onPressed;
+  final onPressed;
 
   const CustomButton({
     required this.text,

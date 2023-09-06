@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class ambulancScreen extends StatefulWidget {
+class amnbulanccall extends StatefulWidget {
   @override
-  _ambulancScreenState createState() => _ambulancScreenState();
+  _amnbulanccallState createState() => _amnbulanccallState();
 }
 
-class _ambulancScreenState extends State<ambulancScreen> {
+class _amnbulanccallState extends State<amnbulanccall> {
   List<String> itemList = [
     'addis abeba',
     'adama',
@@ -60,7 +60,7 @@ class _ambulancScreenState extends State<ambulancScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ambulans call'),
+        title: Text('የአንቡላንስ ጥሪዎች'),
       ),
       body: Column(
         children: <Widget>[

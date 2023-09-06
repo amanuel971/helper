@@ -48,6 +48,21 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
+              text: 'የወባ በሽታ',
+              color: Colors.green,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'malaria.md',
+                      title: 'የወባ በሽታ',
+                    );
+                  },
+                ));
+              },
+            ),
+            CustomButton(
               text: 'ለደም ግፊት',
               color: Colors.green,
               onPressed: () {

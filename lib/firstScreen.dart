@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:helper/MarkDownPage.dart';
+import 'package:helper/ambulanccall.dart';
 
 class firstScreen extends StatelessWidget {
   @override
@@ -35,48 +35,32 @@ class ButtonLayout extends StatelessWidget {
               text: ' የእሳት አደጋ ጊዜ ጥሪዎች',
               color: Colors.blue,
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'firecall.md',
-                      title: 'የእሳት አደጋ ጊዜ ጥሪዎች',
-                    );
-                  },
-                ));
-                ;
+                // Navigator.push(context, MaterialPageRoute(
+                //   builder: (context) {
+                //     return const MarkDownPage(
+                //       //mdName: 'apple.md',
+                //       mdName: 'firecall.md',
+                //       title: 'የእሳት አደጋ ጊዜ ጥሪዎች',
+                //     );
+                //   },
+                // ));
+                // ;
               },
             ),
             CustomButton(
               text: 'የአንቡላንስ ጥሪዎች',
               color: Colors.green,
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'ambulance.md',
-                      title: 'የአንቡላንስ ጥሪዎች',
-                    );
-                  },
-                ));
-                ;
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => amnbulanccall()),
+                );
               },
             ),
             CustomButton(
               text: 'የፖሊስ ጣቢያ ጥሪዎች',
               color: Colors.orange,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'policestation.md',
-                      title: 'የፖሊስ ጣቢያ ጥሪዎች',
-                    );
-                  },
-                ));
-              },
+              onPressed: () {},
             ),
           ],
         ),
@@ -87,31 +71,21 @@ class ButtonLayout extends StatelessWidget {
             CustomButton(
               text: 'የመብራት ሀይል ጥሪዎች',
               color: Colors.red,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'powerstation.md',
-                      title: 'የመብራት ሀይል ጥሪዎች',
-                    );
-                  },
-                ));
-              },
+              onPressed: () {},
             ),
             CustomButton(
               text: 'የethio telecom ጥሪዎች',
               color: Colors.yellow,
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'ethiotelecom.md',
-                      title: 'የethio telecom ጥሪዎች',
-                    );
-                  },
-                ));
+                // Navigator.push(context, MaterialPageRoute(
+                //   builder: (context) {
+                //     return const MarkDownPage(
+                //       //mdName: 'apple.md',
+                //       mdName: 'ethiotelecom.md',
+                //       title: 'የethio telecom ጥሪዎች',
+                //     );
+                //   },
+                // ));
               },
             ),
           ],

@@ -58,7 +58,6 @@ class HomePage extends StatelessWidget {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
                           return const MarkDownPage(
-                            //mdName: 'apple.md',
                             mdName: 'symptom.md',
                             title: 'ምልክቶች',
                           );

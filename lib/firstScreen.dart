@@ -51,7 +51,7 @@ class ButtonLayout extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => amnbulanccall()),
+                  MaterialPageRoute(builder: (context) => ambulancecall()),
                 );
               },
             ),

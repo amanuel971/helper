@@ -10,6 +10,39 @@ class Welcome extends StatelessWidget {
         backgroundColor: Colors.amber,
         title: Text('Welcome To Helper app'),
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'Header',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('information'),
+              onTap: () {
+                // Handle navigation for Item 1
+                Navigator.pop(context); // Close the drawer
+              },
+            ),
+            ListTile(
+              title: Text('suport'),
+              onTap: () {
+                // Handle navigation for Item 2
+                Navigator.pop(context); // Close the drawer
+              },
+            ),
+          ],
+        ),
+      ),
       body: Column(
         children: [
           Image.asset(

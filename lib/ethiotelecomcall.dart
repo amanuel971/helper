@@ -7,42 +7,37 @@ class ethiotelecomcall extends StatefulWidget {
 }
 
 class _ethiotelecomcallState extends State<ethiotelecomcall> {
-  List<String> itemList = [
-    'addis abeba',
-    'adama',
-    'bishoftu',
-    'hawasa',
-    'Gonder',
-  ];
-
-  final List<String> rightColumnTexts = [
-    '9000',
-    '0090',
-    '89989',
-    '58',
-    '321',
-  ];
+  final Map<String, String> fireList = {
+    'Addis Abeba': '9000',
+    'Adama': '0090',
+    'Bishoftu': '89989',
+    'Hawassa': '58',
+    'Gonder': '321'
+  };
 
   List<String> filteredList = [];
 
   @override
   void initState() {
     super.initState();
-    filteredList.addAll(itemList);
+    filteredList.addAll(fireList.keys);
   }
 
   void filterItems(String query) {
     filteredList.clear();
     if (query.isNotEmpty) {
-      itemList.forEach((item) {
-        if (item.toLowerCase().contains(query.toLowerCase())) {
-          filteredList.add(item);
+      fireList.forEach((key, value) {
+        if (key.toLowerCase().contains(query.toLowerCase())) {
+          setState(() {
+            filteredList.add(key);
+          });
         }
       });
     } else {
-      filteredList.addAll(itemList);
+      setState(() {
+        filteredList.addAll(fireList.keys);
+      });
     }
-    setState(() {});
   }
 
   void _showToast(BuildContext context) {
@@ -51,7 +46,9 @@ class _ethiotelecomcallState extends State<ethiotelecomcall> {
       SnackBar(
         content: const Text('Number copied!'),
         action: SnackBarAction(
-            label: 'okay', onPressed: scaffold.hideCurrentSnackBar),
+          label: 'Okay',
+          onPressed: scaffold.hideCurrentSnackBar,
+        ),
       ),
     );
   }
@@ -60,7 +57,7 @@ class _ethiotelecomcallState extends State<ethiotelecomcall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የethio telecom '),
+        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
       ),
       body: Column(
         children: <Widget>[
@@ -77,20 +74,23 @@ class _ethiotelecomcallState extends State<ethiotelecomcall> {
             child: ListView.builder(
               itemCount: filteredList.length,
               itemBuilder: (context, index) {
+                final key = filteredList[index];
+                final value = fireList[key];
                 return Padding(
                   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(filteredList[index]),
+                      Text(key),
                       InkWell(
                         onTap: () async {
                           await Clipboard.setData(
-                              ClipboardData(text: rightColumnTexts[index]));
+                            ClipboardData(text: value),
+                          );
                           _showToast(context);
                         },
                         child: Text(
-                          rightColumnTexts[index],
+                          value!,
                           style: TextStyle(color: Colors.blue),
                         ),
                       )

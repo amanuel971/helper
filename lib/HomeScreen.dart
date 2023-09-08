@@ -1,5 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:helper/MarkDownPage.dart';
+import 'package:flutter/material.dart';
+
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    home: DefaultTabController(
+      length: 3, // Number of tabs
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Tab Navigation'),
+          bottom: TabBar(
+            tabs: [
+              Tab(text: 'Tab 1'),
+              Tab(text: 'Tab 2'),
+              Tab(text: 'Tab 3'),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: [
+            Center(child: Text('Tab 1 Content')),
+            Center(child: Text('Tab 2 Content')),
+            Center(child: Text('Tab 3 Content')),
+          ],
+        ),
+      ),
+    ),
+  );
+}
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -14,6 +43,39 @@ class HomeScreen extends StatelessWidget {
               },
               icon: Icon(Icons.arrow_back_ios),
             )),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+                child: Text(
+                  'Drawer Header',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text('Item 1'),
+                onTap: () {
+                  // Handle navigation for Item 1
+                  Navigator.pop(context); // Close the drawer
+                },
+              ),
+              ListTile(
+                title: Text('Item 2'),
+                onTap: () {
+                  // Handle navigation for Item 2
+                  Navigator.pop(context); // Close the drawer
+                },
+              ),
+            ],
+          ),
+        ),
         body: Center(
           child: ButtonLayout(),
         ),

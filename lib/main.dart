@@ -12,6 +12,36 @@ void main() {
   ));
 }
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: DefaultTabController(
+        length: 3, // Number of tabs
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Tab Navigation'),
+            bottom: TabBar(
+              tabs: [
+                Tab(text: 'Tab 1'),
+                Tab(text: 'Tab 2'),
+                Tab(text: 'Tab 3'),
+              ],
+            ),
+          ),
+          body: TabBarView(
+            children: [
+              Center(child: Text('Tab 1 Content')),
+              Center(child: Text('Tab 2 Content')),
+              Center(child: Text('Tab 3 Content')),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

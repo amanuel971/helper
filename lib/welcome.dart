@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:helper/information.dart';
 import 'package:helper/main.dart';
+import 'package:helper/suportScreen.dart';
 
 class Welcome extends StatelessWidget {
   @override
@@ -29,15 +31,19 @@ class Welcome extends StatelessWidget {
             ListTile(
               title: Text('information'),
               onTap: () {
-                // Handle navigation for Item 1
-                Navigator.pop(context); // Close the drawer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InformationScreen()),
+                );
               },
             ),
             ListTile(
               title: Text('suport'),
               onTap: () {
-                // Handle navigation for Item 2
-                Navigator.pop(context); // Close the drawer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => suportScreen()),
+                );
               },
             ),
           ],

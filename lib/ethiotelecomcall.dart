@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class ethiotelecomcall extends StatefulWidget {
   @override
@@ -8,11 +9,11 @@ class ethiotelecomcall extends StatefulWidget {
 
 class _ethiotelecomcallState extends State<ethiotelecomcall> {
   final Map<String, String> fireList = {
-    'Addis Abeba': '9000',
-    'Adama': '0090',
-    'Bishoftu': '89989',
-    'Hawassa': '58',
-    'Gonder': '321'
+    'Addis Abeba': '980',
+    'Adama': '980',
+    'Bishoftu': '980',
+    'Hawassa': '980',
+    'Gonder': '980'
   };
 
   List<String> filteredList = [];
@@ -84,10 +85,7 @@ class _ethiotelecomcallState extends State<ethiotelecomcall> {
                       Text(key),
                       InkWell(
                         onTap: () async {
-                          await Clipboard.setData(
-                            ClipboardData(text: value),
-                          );
-                          _showToast(context);
+                          await FlutterPhoneDirectCaller.callNumber(value);
                         },
                         child: Text(
                           value!,

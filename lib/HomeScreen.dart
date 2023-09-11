@@ -1,34 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:helper/MarkDownPage.dart';
-import 'package:flutter/material.dart';
-
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: DefaultTabController(
-      length: 3, // Number of tabs
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Tab Navigation'),
-          bottom: TabBar(
-            tabs: [
-              Tab(text: 'Tab 1'),
-              Tab(text: 'Tab 2'),
-              Tab(text: 'Tab 3'),
-            ],
-          ),
-        ),
-        body: TabBarView(
-          children: [
-            Center(child: Text('Tab 1 Content')),
-            Center(child: Text('Tab 2 Content')),
-            Center(child: Text('Tab 3 Content')),
-          ],
-        ),
-      ),
-    ),
-  );
-}
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -94,7 +65,7 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'ለልብ ድካም',
+              text: 'ለልብ ድካም(For heart failure)',
               color: Colors.blue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -102,7 +73,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'heartfailuer.md',
-                      title: 'ለልብ ድካም',
+                      title: 'ለልብ ድካም(for Haert failure)',
                     );
                   },
                 ));
@@ -110,7 +81,7 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'የወባ በሽታ',
+              text: 'የወባ በሽታ(For Malaria)',
               color: Colors.green,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -118,14 +89,14 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'malaria.md',
-                      title: 'የወባ በሽታ',
+                      title: 'የወባ በሽታ(for malaria)',
                     );
                   },
                 ));
               },
             ),
             CustomButton(
-              text: 'ለደም ግፊት',
+              text: 'ለደም ግፊት(For Blood pressuer)',
               color: Colors.green,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -133,7 +104,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'bloodpressuer.md',
-                      title: 'ለደም ግፊት',
+                      title: 'ለደም ግፊት(for blood pressuer)',
                     );
                   },
                 ));
@@ -141,7 +112,7 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'ለደም ማነስ',
+              text: 'ለደም ማነስ(For Anemia)',
               color: Colors.orange,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -149,7 +120,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'Anemia.md',
-                      title: 'ለደም ማነስ',
+                      title: 'ለደም ማነስ(for anemia)',
                     );
                   },
                 ));
@@ -162,7 +133,7 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'ለደም ብዛት',
+              text: 'ለደም ብዛት(For Blood count)',
               color: Colors.red,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -170,14 +141,14 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'bloodcount.md',
-                      title: 'ለደም ብዛት',
+                      title: 'ለደም ብዛት(for blood count)',
                     );
                   },
                 ));
               },
             ),
             CustomButton(
-              text: 'ለሚጥል በሽታ',
+              text: 'ለሚጥል በሽታ(For Eplipesy)',
               color: Colors.purple,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -185,14 +156,14 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'Eplipesy.md',
-                      title: 'ለሚጥል በሽታ',
+                      title: 'ለሚጥል በሽታ(for eplipesy)',
                     );
                   },
                 ));
               },
             ),
             CustomButton(
-              text: 'ለስኳር በሽታ',
+              text: 'ለስኳር በሽታ(For Doabets)',
               color: Colors.yellow,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -200,14 +171,14 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'diabets.md',
-                      title: 'ለስኳር በሽታ',
+                      title: 'ለስኳር በሽታ(for diabets)',
                     );
                   },
                 ));
               },
             ),
             CustomButton(
-              text: 'ለአስም',
+              text: 'ለአስም(For Asthema)',
               color: Colors.teal,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
@@ -215,7 +186,7 @@ class ButtonLayout extends StatelessWidget {
                     return const MarkDownPage(
                       //mdName: 'apple.md',
                       mdName: 'Asthema.md',
-                      title: 'ለአስም',
+                      title: 'ለአስም(for asthema)',
                     );
                   },
                 ));

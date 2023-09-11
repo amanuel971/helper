@@ -1,59 +1,59 @@
-# i,የልብ ድካም
-1. የትንፋሽ ማጠር,
-2. ድካም እና ድክመት,
-3. በእግር፣ በቁርጭምጭሚት ላይ እብጠት,
-4. ፈጣን ወይም መደበኛ ያልሆነ የልብ ምት,
-5. የማያቋርጥ ሳል ወይም የትንፋሽ ማፍሰሻ,
-6. የአካል ብቃት እንቅስቃሴን መቻቻል መቀነስ,
-7. ክብደት መጨመር,
-# ii,ደም ግፊት
-1. ራስ ምታት,
-2. ማዞር, 
-3. የዓይን ብዥታ,
-4. የደረት ሕመም,
-5. ትንፋሽ ማጠር,
-6. ድካም ወይም ድክመት,
-7. የአፍንጫ ደም መፍሰስ,
-# iii,ደም ማነስ
-ራስ ምታት,
-1. ማዞር ወይም ራስ ምታት,
-2. የዓይን ብዥታ,
-3. የደረት ሕመም,
-4. የትንፋሽ ማጠር,
-5. ድካም ወይም ድክመት,
-6. የአፍንጫ ደም መፍሰስ,
-# iv,የሚጥል በሽታ
-1. የንቃተ ህሊና መሳት,
-2. የመናድ ችግር,
-3. የትኩረት መናድ,
-4. የእይታ መዛባት,
-5. የንቃተ ህሊና ማጣት,
-6. ግራ መጋባት ወይም የማስታወስ ችግር,
-7. መኮማተር ና መደንዘዝ,
-# v,የስኳር በሽታ
-1. በተደጋጋሚ የሽንት መሽናት,
-2. ከመጠን በላይ ጥማት,
-3. ያልታወቀ ክብደት መቀነስ,
-4. ረሃብ መጨመር,
-5. ድካም እና ድክመት,
-6. ቁስሎችን ቀስ በቀስ ማዳን,
-7. ብዥ ያለ እይታ,
-8. መደንዘዝ ወይም መንቀጥቀጥ,
-9. ተደጋጋሚ ኢንፌክሽኖች,
-# vi,ደም ብዛት
-1. ኢንፌክሽኖች,
-2. መድማት ወይም መሰባበር,
-3. እብጠት ወይም ራስን የመከላከል ሁኔታዎች,
-4. የደም መዛባቶች,
-# vii,የወባ በሽታ
-1. ከፍተኛ ትኩሳት,
-2. ብርድ ብርድ ማለት እና ማላብ ,
-3. ራስ ምታት,
-4. የጡንቻ እና የመገጣጠሚያ ህመም ,
-5. ድካም እና ድክመት,
-6. ማቅለሽለሽ እና ማስታወክ,
-7. የጨጓራና ትራክት ምልክቶች,
-8. የደም ማነስ,
-9. አገርጥቶትና,
+# i,የልብ ድካም (heart attack)
+1. የትንፋሽ ማጠር,( Shortness of breath)
+2. ድካም እና ድክመት,( Fatigue and weakness)
+3. በእግር፣ በቁርጭምጭሚት ላይ እብጠት,( swelling in the feet, ankles)
+4. ፈጣን ወይም መደበኛ ያልሆነ የልብ ምት,( Fast or irregular heartbeat)
+5. የማያቋርጥ ሳል ወይም የትንፋሽ ማፍሰሻ,( Constant cough or discharge of breath)
+6. የአካል ብቃት እንቅስቃሴን መቻቻል መቀነስ,( Decreased exercise tolerance)
+7. ክብደት መጨመር,( Weight gain)
+# ii,ደም ግፊት(blood pressure )
+1. ራስ ምታት,( Headache) 
+2. ማዞር, ( dizziness)
+3. የዓይን ብዥታ,( blurred vision)
+4. የደረት ሕመም,( chest pain)
+5. ትንፋሽ ማጠር,( Shortness of breath)
+6. ድካም ወይም ድክመት,( Fatigue or weakness)
+7. የአፍንጫ ደም መፍሰስ,( nosebleeds)
+# iii,ደም ማነስ(anemia)
+1. ማዞር ወይም ራስ ምታት,( dizziness or headache)
+2. የዓይን ብዥታ,( blurred vision)
+3. የደረት ሕመም,( chest pain)
+4. የትንፋሽ ማጠር,( Shortness of breath)
+5. ድካም ወይም ድክመት,( Fatigue or weakness)
+6. የአፍንጫ ደም መፍሰስ,( nosebleeds)
+7. ራስ ምታት,( headache)
+# iv,የሚጥል በሽታ(epilepsy)
+1. የንቃተ ህሊና መሳት,( Loss of consciousness)
+2. የመናድ ችግር,( seizure disorders)
+3. የትኩረት መናድ,( Focal seizures)
+4. የእይታ መዛባት,( Visual disturbances)
+5. የንቃተ ህሊና ማጣት,( Loss of consciousness)
+6. ግራ መጋባት ወይም የማስታወስ ችግር,( confusion or memory problems)
+7. መኮማተር ና መደንዘዝ,( tingling and numbness)
+# v,የስኳር በሽታ(diabetes)
+1. በተደጋጋሚ የሽንት መሽናት,( Frequent urination)
+2. ከመጠን በላይ ጥማት,( Excessive thirst)
+3. ያልታወቀ ክብደት መቀነስ,( unexplained weight loss)
+4. ረሃብ መጨመር,( Increased hunger)
+5. ድካም እና ድክመት,( Fatigue and weakness)
+6. ቁስሎችን ቀስ በቀስ ማዳን,( Gradual healing of wounds)
+7. ብዥ ያለ እይታ,( blurred vision)
+8. መደንዘዝ ወይም መንቀጥቀጥ,( Numbness or tremors)
+9. ተደጋጋሚ ኢንፌክሽኖች,( Frequent infections)
+# vi,ደም ብዛት(blood count) 
+1. ኢንፌክሽኖች,( infections)
+2. መድማት ወይም መሰባበር,( Bleeding or bruising)
+3. እብጠት ወይም ራስን የመከላከል ሁኔታዎች,( Inflammatory or autoimmune conditions)
+4. የደም መዛባቶች,( Blood disorders)
+# vii,የወባ በሽታ(malaria)
+1. ከፍተኛ ትኩሳት,( High fever)
+2. ብርድ ብርድ ማለት እና ማላብ ,( chills and sweating)
+3. ራስ ምታት,( Headache)
+4. የጡንቻ እና የመገጣጠሚያ ህመም ,( Muscle and joint pain)
+5. ድካም እና ድክመት,( Fatigue and weakness)
+6. ማቅለሽለሽ እና ማስታወክ,( nausea and vomiting)
+7. የጨጓራና ትራክት ምልክቶች,( Symptoms of the gastrointestinal tract)
+8. የደም ማነስ,( Anemia)
+9. አገርጥቶትና,( Jaundice)
 
-      የወባ በሽታ ምልክቶች ከሌሎች በሽታዎች ምልክቶች ጋር ሊመሳሰሉ እንደሚችሉ ልብ ሊባል የሚገባው ነው, ስለዚህ በጤና ባለሙያ ትክክለኛ ምርመራ ማድረግ በጣም አስፈላጊ ነው. በተጨማሪም፣ ሁሉም በወባ የተያዙ ሰዎች እነዚህን ሁሉ ምልክቶች አይታዩም። አንዳንድ ግለሰቦች፣ በተለይም ከፊል የበሽታ መከላከያ ወይም ዝቅተኛ ጥገኛ ተውሳክ ደረጃ ያላቸው፣ ቀለል ያሉ ምልክቶች ሊያጋጥሟቸው ወይም ምንም ምልክት የሌላቸው ሊሆኑ ይችላሉ።
+    

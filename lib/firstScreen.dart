@@ -4,6 +4,8 @@ import 'package:helper/ethiotelecomcall.dart';
 import 'package:helper/firecall.dart';
 import 'package:helper/policecall.dart';
 import 'package:helper/powercall.dart';
+import 'package:helper/trafick.dart';
+import 'package:helper/watercall.dart';
 
 class firstScreen extends StatelessWidget {
   @override
@@ -36,7 +38,7 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: ' የእሳት አደጋ ጊዜ ጥሪዎች',
+              text: ' የእሳት አደጋ ጊዜ ጥሪዎች(Fire brigade calls)',
               color: Colors.blue,
               onPressed: () {
                 Navigator.push(
@@ -46,7 +48,7 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'የአንቡላንስ ጥሪዎች',
+              text: 'የአንቡላንስ ጥሪዎች(Ambulance calls)',
               color: Colors.green,
               onPressed: () {
                 Navigator.push(
@@ -56,7 +58,17 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'የፖሊስ ጣቢያ ጥሪዎች',
+              text: 'የትራፊክ ፖሊስ ጥሪዎች(Traffic police calls)',
+              color: Colors.red,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => trafickcall()),
+                );
+              },
+            ),
+            CustomButton(
+              text: 'የፖሊስ ጣቢያ ጥሪዎች(Police stations calls)',
               color: Colors.orange,
               onPressed: () {
                 Navigator.push(
@@ -72,7 +84,7 @@ class ButtonLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CustomButton(
-              text: 'የመብራት ሀይል ጥሪዎች',
+              text: 'የመብራት ሀይል ጥሪዎች(Power supply calls)',
               color: Colors.red,
               onPressed: () {
                 Navigator.push(
@@ -81,6 +93,33 @@ class ButtonLayout extends StatelessWidget {
                 );
               },
             ),
+            SizedBox(height: 16),
+            CustomButton(
+              text: 'የዉሀ ልማት ጥሪዎች(Water supply calls)',
+              color: Colors.purple,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => watercall()),
+                );
+              },
+            ),
+
+            // SizedBox(height: 16),
+            // Column(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   children: [
+            //     CustomButton(
+            //       text: 'የዉሀ ልማት ጥሪዎች(Water supply calls',
+            //       color: Colors.purple,
+            //       onPressed: () {
+            //         Navigator.push(
+            //           context,
+            //           MaterialPageRoute(builder: (context) => powercall()),
+            //         );
+            //       },
+            //     ),
+            SizedBox(height: 16),
             CustomButton(
               text: 'የethio telecom ጥሪዎች',
               color: Colors.yellow,

@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/services.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
-class powercall extends StatefulWidget {
+class trafickcall extends StatefulWidget {
   @override
-  _powercallState createState() => _powercallState();
+  _trafickcallState createState() => _trafickcallState();
 }
 
-class _powercallState extends State<powercall> {
+class _trafickcallState extends State<trafickcall> {
   final Map<String, String> fireList = {
-    'Addis Ababa': '905',
-    'Dessa': '+0331115361',
-    'Dessa ': '+0331115362',
-    'Dessa:poweremergency': '+0331111341',
+    'Addis Ababa': '+251 11 6628086',
   };
 
   List<String> filteredList = [];
@@ -57,7 +54,7 @@ class _powercallState extends State<powercall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የመብራት ሀይል ጥሪዎች'),
+        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
       ),
       body: Column(
         children: <Widget>[

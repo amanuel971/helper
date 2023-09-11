@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helper/information.dart';
 import 'package:helper/main.dart';
-import 'package:helper/suportScreen.dart';
 
 class Welcome extends StatelessWidget {
   @override
@@ -29,23 +28,23 @@ class Welcome extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('information'),
+              title: Text('about us'),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => InformationScreen()),
+                  MaterialPageRoute(builder: (context) => informationScreen()),
                 );
               },
             ),
-            ListTile(
-              title: Text('suport'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => suportScreen()),
-                );
-              },
-            ),
+            // ListTile(
+            //   title: Text('suport'),
+            //   onTap: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => suportScreen()),
+            //     );
+            //   },
+            // ),
           ],
         ),
       ),

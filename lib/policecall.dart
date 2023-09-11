@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class policecall extends StatefulWidget {
   @override
@@ -8,11 +9,19 @@ class policecall extends StatefulWidget {
 
 class _policecallState extends State<policecall> {
   final Map<String, String> fireList = {
-    'Addis Abeba': '9000',
-    'Adama': '0090',
-    'Bishoftu': '89989',
-    'Hawassa': '58',
-    'Gonder': '321'
+    'Addis Abeba:federal police ': '916',
+    'Addis Ababa:police comition': '+251 11 15572121',
+    'Addis Ababa:ldata police': '+251 11 5153760',
+    'Addis Ababa:kirlos': '+251 11 5534774',
+    'Addis Ababa:arada': '+251 11 1573426',
+    'Addis Ababa:yeka': '+251 11 1181339',
+    'Addis Ababa:nfas selkelafto': '+251 11 3400792',
+    'Addis Ababa:kolfe': '+251 11 3494115',
+    'Addis Ababa:akaki kality': '+251 11 4341438',
+    'Addis Ababa:bole': '+251 11 6536794',
+    'Addis Ababa:addis ketama': '+251 11 2788706',
+    'Addis Ababa:gulele': '+251 11 1575059',
+    'Dessa': '+033 1117748'
   };
 
   List<String> filteredList = [];
@@ -84,10 +93,7 @@ class _policecallState extends State<policecall> {
                       Text(key),
                       InkWell(
                         onTap: () async {
-                          await Clipboard.setData(
-                            ClipboardData(text: value),
-                          );
-                          _showToast(context);
+                          await FlutterPhoneDirectCaller.callNumber(value);
                         },
                         child: Text(
                           value!,

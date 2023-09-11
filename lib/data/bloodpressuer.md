@@ -14,3 +14,16 @@
 3. ሰውዬው ንቃተ ህሊና ከሌለው ብቻቸውን አይተዋቸው።
 
 ያስታውሱ፣ ከፍተኛ የደም ግፊት ከባድ የጤና እክል ሊሆን ይችላል፣ እና ሁልጊዜም የባለሙያዎችን ምክር መጠየቅ ይመከራል። እነዚህ እርምጃዎች የመጀመሪያ እርዳታ ሊሰጡ ቢችሉም, ግለሰቡ የደም ግፊታቸው ዋና መንስኤዎችን ለመፍታት እና ተገቢውን ህክምና ለማግኘት የጤና ባለሙያን እንዲያማክር ማበረታታት አስፈላጊ ነው።
+
+# hypertension(blood pressuer)
+1. Stay calm and reassure the person: It is very important to remain calm and calm someone with high blood pressure. Anxiety and panic attacks can worsen their condition. 
+2. Help the person sit: Help the person find a comfortable sitting position, preferably by supporting their back. This helps reduce the strain on their cardiovascular system. 
+3. Encourage deep breathing and relaxation: Direct the person to take slow, deep breaths. Encourage them to breathe deeply through their noses and exhale slowly through their mouths. 
+4. Loosen tight clothing: If the person wears tight clothing such as a collar or belt, loosen or remove gently to ensure unrestricted circulation. 
+5. Offer water: Offer someone a glass of water. Staying hydrated helps maintain blood volume and lower blood pressure. 
+6. Remember that you should not delay calling for medical help if the person's condition worsens or experiences severe symptoms.
+  (Here are some more things to keep in mind) 
+1. Don't give the person anything to eat or drink. 
+2. Do not move the person unless in immediate danger. 
+3. If the person is unconscious, do not leave them alone.
+ Remember, high blood pressure can be a serious medical condition, and it's always recommended to seek professional advice. While these measures can provide first aid, it is important to encourage the individual to consult a health professional to address the underlying causes of their high blood pressure and receive appropriate treatment.

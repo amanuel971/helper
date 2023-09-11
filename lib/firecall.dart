@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class firecall extends StatefulWidget {
@@ -9,11 +8,11 @@ class firecall extends StatefulWidget {
 
 class _firecallState extends State<firecall> {
   final Map<String, String> fireList = {
-    'Addis Abeba': '9000',
-    'Adama': '0090',
-    'Bishoftu': '89989',
-    'Hawassa': '58',
-    'Gonder': '321'
+    'Addis Ababa:station menilik square': '+251 11 1567004',
+    'Addis Ababa:addisu qera': '+251 11 6663420',
+    'Addis Ababa:masalamia': '+251 11 12769146',
+    'Addis Ababa:nfas selke': '+251 11 4255556',
+    'Dessa': '+033 1116125'
   };
 
   List<String> filteredList = [];

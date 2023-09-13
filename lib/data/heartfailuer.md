@@ -8,7 +8,7 @@
 6.  የልብ ድካም ለተጎዳው ሰው አስፈሪ ተሞክሮ ሊሆን ይችላል. የሕክምና ባለሙያዎች እስኪመጡ ድረስ ስሜታዊ ድጋፍን፣ ማረጋገጫን ይስጡ እና ከእነሱ ጋር ይቆዩ።
 
 ያስታውሱ፣ እነዚህ እርምጃዎች አጠቃላይ መመሪያዎች ናቸው፣ እና ለትክክለኛ ምክር እና እርዳታ የህክምና ባለሙያዎችን ማማከር አስፈላጊ ነው። የልብ ድካም አፋጣኝ የሕክምና ክትትል ያስፈልገዋል, እና ከላይ የተገለጹት ድርጊቶች የባለሙያዎችን እርዳታ በሚጠብቁበት ጊዜ የመጀመሪያ እርዳታ ለመስጠት ነው.
-# heart problem 
+# Heart Problem 
 1. Stay calm and reassure the person: It's important to stay calm and calm the person. Stress and panic can make the situation worse. 
 2. Help the person sit: Help the person sit in a comfortable sitting position, preferably by supporting their back and, if possible, elevating their legs. This helps reduce pressure on the heart. 
 3. Avoid tight clothing around the neck, chest, and waist, as it can restrict breathing and blood flow. 

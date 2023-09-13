@@ -15,7 +15,7 @@
 
 ያስታውሱ፣ ከፍተኛ የደም ግፊት ከባድ የጤና እክል ሊሆን ይችላል፣ እና ሁልጊዜም የባለሙያዎችን ምክር መጠየቅ ይመከራል። እነዚህ እርምጃዎች የመጀመሪያ እርዳታ ሊሰጡ ቢችሉም, ግለሰቡ የደም ግፊታቸው ዋና መንስኤዎችን ለመፍታት እና ተገቢውን ህክምና ለማግኘት የጤና ባለሙያን እንዲያማክር ማበረታታት አስፈላጊ ነው።
 
-# hypertension(blood pressuer)
+# Hypertension(Blood Pressuer)
 1. Stay calm and reassure the person: It is very important to remain calm and calm someone with high blood pressure. Anxiety and panic attacks can worsen their condition. 
 2. Help the person sit: Help the person find a comfortable sitting position, preferably by supporting their back. This helps reduce the strain on their cardiovascular system. 
 3. Encourage deep breathing and relaxation: Direct the person to take slow, deep breaths. Encourage them to breathe deeply through their noses and exhale slowly through their mouths. 

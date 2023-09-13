@@ -1,52 +1,65 @@
 import 'package:flutter/material.dart';
 import 'package:helper/MarkDownPage.dart';
 
+// class HomeScreen extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Align Demo',
+//       home: HomePage(),
+//     );
+//   }
+// }
+
+// class HomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//           title: Text('የመረጃ መመሪያ(Information Guide)'),
+//           leading: IconButton(
+//             onPressed: () {
+//               Navigator.pop(context);
+//             },
+//             icon: Icon(Icons.arrow_back_ios),
+//           )),
+//       body: Align(
+
+//         alignment: Alignment.topLeft,
+
+//         child: ElevatedButton(
+//           child: Text('ለልብ ድካም(For heart failure)'),
+//           onPressed: () {
+//             Navigator.push(context, MaterialPageRoute(
+//               builder: (context) {
+//                 return const MarkDownPage(
+//                   //mdName: 'apple.md',
+//                   mdName: 'heartfailuer.md',
+//                   title: 'ለልብ ድካም(for Haert failure)',
+//                 );
+//               },
+//             ));
+//             ;
+//           },
+//         ),
+//       ),
+
+//     );
+//   }
+// }
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('የመረጃ መመሪያ'),
+            title: Text('የመረጃ መመሪያ(Information Guide)'),
             leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);
               },
               icon: Icon(Icons.arrow_back_ios),
             )),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
-                child: Text(
-                  'Drawer Header',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
-                title: Text('Item 1'),
-                onTap: () {
-                  // Handle navigation for Item 1
-                  Navigator.pop(context); // Close the drawer
-                },
-              ),
-              ListTile(
-                title: Text('Item 2'),
-                onTap: () {
-                  // Handle navigation for Item 2
-                  Navigator.pop(context); // Close the drawer
-                },
-              ),
-            ],
-          ),
-        ),
         body: Center(
           child: ButtonLayout(),
         ),
@@ -126,12 +139,6 @@ class ButtonLayout extends StatelessWidget {
                 ));
               },
             ),
-          ],
-        ),
-        SizedBox(height: 16),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
             CustomButton(
               text: 'ለደም ብዛት(For Blood count)',
               color: Colors.red,

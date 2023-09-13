@@ -77,12 +77,6 @@ class ButtonLayout extends StatelessWidget {
                 );
               },
             ),
-          ],
-        ),
-        SizedBox(height: 16),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
             CustomButton(
               text: 'የመብራት ሀይል ጥሪዎች(Power supply calls)',
               color: Colors.red,
@@ -93,7 +87,6 @@ class ButtonLayout extends StatelessWidget {
                 );
               },
             ),
-            SizedBox(height: 16),
             CustomButton(
               text: 'የዉሀ ልማት ጥሪዎች(Water supply calls)',
               color: Colors.purple,
@@ -104,22 +97,6 @@ class ButtonLayout extends StatelessWidget {
                 );
               },
             ),
-
-            // SizedBox(height: 16),
-            // Column(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   children: [
-            //     CustomButton(
-            //       text: 'የዉሀ ልማት ጥሪዎች(Water supply calls',
-            //       color: Colors.purple,
-            //       onPressed: () {
-            //         Navigator.push(
-            //           context,
-            //           MaterialPageRoute(builder: (context) => powercall()),
-            //         );
-            //       },
-            //     ),
-            SizedBox(height: 16),
             CustomButton(
               text: 'የethio telecom ጥሪዎች',
               color: Colors.yellow,

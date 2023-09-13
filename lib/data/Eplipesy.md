@@ -13,7 +13,7 @@
 
 ያስታውሱ፣ እነዚህ እርምጃዎች የመጀመሪያ እርዳታ ሊሰጡ ቢችሉም፣ ስለ ሰውዬው ሁኔታ ከጤና ባለሙያ ጋር መማከር እና ተገቢውን የህክምና እንክብካቤ መፈለግ አስፈላጊ ነው። የሚጥል በሽታ ትክክለኛ ምርመራ፣ ሕክምና እና ብቃት ባላቸው የሕክምና ባለሙያዎች አስተዳደር ያስፈልገዋል።
 
-# epilepsy 
+# Epilepsy 
 1. Stay calm and reassure others: Stay calm and reassure bystanders or bystanders who may be shocked or scared by the situation. Maintaining a calm environment can help the person feel more secure. 
 2. Clean the area: Create a safe space by removing objects or furniture that could cause injury during a seizure. Make sure there are no sharp or dangerous objects nearby. 
 3. Protect the person's head: If possible, place something soft, like a folded jacket or pillow, under the person's head. This can help prevent head injuries. 

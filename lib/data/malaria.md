@@ -12,7 +12,7 @@
 6. ሽፋን እና ጥበቃ፡- ወባ የሚተላለፈው በወባ ትንኝ ንክሻ ነው። ተጨማሪ የወባ ትንኝ መጋለጥን ለመከላከል ሰውየውን በወባ ትንኝ መረብ ይሸፍኑት ወይም በተጣራ ቦታ ላይ መሆናቸውን ያረጋግጡ። ይህም ከተጨማሪ የወባ ትንኝ ንክሻዎች ይጠብቃቸዋል እንዲሁም በሽታውን የመዛመት አደጋን ይቀንሳል።
 7. የማጽናኛ እርምጃዎችን ይስጡ፡ ምልክቶችን ለማስታገስ መሰረታዊ የማጽናኛ እርምጃዎችን ይስጡ። ትኩሳትን ለመቀነስ በግንባሩ ላይ ቀዝቃዛ መጭመቂያ ይጠቀሙ፣ አስፈላጊ ከሆነም እንዲሞቃቸው ቀላል ብርድ ልብስ ያቅርቡ፣ እና በሚመቹበት ጊዜ መረጋጋት እና ስሜታዊ ድጋፍ ይስጡ።
 
-# For malaria 
+# Malaria 
 1. Know the symptoms: Be aware of common malaria symptoms, which include high fever, chills, headache, muscle aches, fatigue, nausea, and vomiting. If the person shows these symptoms, suspect malaria. 
 2. Seek medical attention Malaria can be a serious and life-threatening condition. If possible, try to seek medical attention immediately. Contact local healthcare providers, emergency services, or transport the person to the nearest medical facility. 
 3. Ensure rest and comfort: While waiting for medical attention, help the person find a comfortable resting place. Make sure they sleep and provide a cool, quiet and well-ventilated place to rest. 

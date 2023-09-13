@@ -20,7 +20,7 @@
 
 እነዚህ እርምጃዎች እንደ አጠቃላይ መመሪያ የታቀዱ መሆናቸውን ልብ ሊባል የሚገባው ጉዳይ ነው፣ እና የሚወሰዱት ልዩ እርምጃዎች እንደየግለሰብ ሁኔታ ሊለያዩ ይችላሉ። 
 
-# diabetes 
+# Diabetes 
 ## Low blood sugar 
 1. Know the signs: Be mindful of the symptoms of low blood sugar, which may include confusion, dizziness, tremors, sweating, weakness, or irritability. 
 2. Provide a source of sugar: If the person is conscious and able to swallow, give them a fast-acting sugar source, such as glucose tablets, a sweet drink or candy. Avoid foods that require significant chewing or have fat, as they can delay sugar absorption. 

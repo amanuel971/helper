@@ -43,7 +43,6 @@ class HomePage extends StatelessWidget {
               },
               child: Text('ምልክቶች(Symptoms)'),
             ),
-            SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(

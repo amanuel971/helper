@@ -10,7 +10,7 @@
 
 የደም ማነስ የተለያዩ ምክንያቶች እና የክብደት ደረጃዎች ሊኖሩት እንደሚችል ልብ ሊባል ይገባል። የሰውዬው ምልክቶች እየተባባሱ ከሄዱ፣ ንቃተ ህሊናቸው ከጠፋ፣ ወይም ሁኔታው ​​አሳሳቢ ከሆነ፣ ለድንገተኛ ህክምና እርዳታ ከመጥራት ወደኋላ አትበሉ።
 
-# anemia
+# Anemia
  1. Help the person sit or lie down: Help the person find a comfortable sitting or lying position, depending on their preferences and comfort level.
  2. Elevating their legs slightly improves blood circulation. 
  3. Give rest and relaxation: Encourage the person to rest and stay away from any strenuous activities.

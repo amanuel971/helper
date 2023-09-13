@@ -9,7 +9,7 @@
 7. ቀስቅሴዎችን ያስወግዱ፡ ከተቻለ የአስም ጥቃትን ያደረሱትን ወይም ያባባሱትን ቀስቅሴዎችን ያስወግዱ። እነዚህ ቀስቅሴዎች ጭስ, ኃይለኛ ሽታ ወይም አለርጂዎችን ሊያካትቱ ይችላሉ.
 8. የግለሰቡን ሁኔታ ይቆጣጠሩ፡ ግለሰቡን በቅርበት ይከታተሉ እና የመሻሻል ወይም የመበላሸት ምልክቶችን ይመልከቱ። ሁኔታቸው እየተባባሰ ከሄደ፣ የመናገር ወይም የመተንፈስ ችግር፣ ወይም ከንፈራቸው ወደ ሰማያዊነት ከተቀየረ፣ ለድንገተኛ ህክምና እርዳታ መደወል አስፈላጊ ሊሆን ይችላል።
 
-# asthma 
+# Asthma 
 1. Stay calm: It is important to calm down and calm someone who has had an asthma attack. Anxiety and panic attacks can make their symptoms worse. 
 2. Help the person sit: Help them find a comfortable sitting position by tilting them forward slightly. This position helps facilitate easier breathing by allowing the chest to expand freely. 
 3. If the person has a prescribed inhaler, help them use it. Help them take slow, deep breaths 

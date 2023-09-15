@@ -54,7 +54,7 @@ class _trafickcallState extends State<trafickcall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
+        title: Text('የትራፊክ ፖሊስ ጥሪዎች(Trafic police calls)'),
       ),
       body: Column(
         children: <Widget>[
@@ -63,7 +63,7 @@ class _trafickcallState extends State<trafickcall> {
             child: TextField(
               onChanged: filterItems,
               decoration: InputDecoration(
-                labelText: 'Search',
+                labelText: 'find',
               ),
             ),
           ),

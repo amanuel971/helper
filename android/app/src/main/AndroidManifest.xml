@@ -2,7 +2,7 @@
     <application
         android:label="helper"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/helper">
         <activity
             android:name=".MainActivity"
             android:exported="true"

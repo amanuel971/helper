@@ -27,6 +27,9 @@ class _ambulancecallState extends State<ambulancecall> {
     'Addis Ababa:st.yared': '+251 11 6454604',
     'Addis Ababa:zawditu': '+251 11 5518085',
     'Dessa:keymeskel': '+0331111566',
+    'shashemane': ' 0461106118',
+    'shashemane ': '0461106666',
+    'mekele': '0344404715',
   };
 
   List<String> filteredList = [];
@@ -71,7 +74,7 @@ class _ambulancecallState extends State<ambulancecall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
+        title: Text('ወደ አንቡላንስ ጥሪዎች(Amulance calls)'),
       ),
       body: Column(
         children: <Widget>[
@@ -80,7 +83,7 @@ class _ambulancecallState extends State<ambulancecall> {
             child: TextField(
               onChanged: filterItems,
               decoration: InputDecoration(
-                labelText: 'Search',
+                labelText: 'find',
               ),
             ),
           ),

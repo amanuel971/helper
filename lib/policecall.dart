@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class policecall extends StatefulWidget {
@@ -23,6 +23,8 @@ class _policecallState extends State<policecall> {
     'Addis Ababa:gulele': '+251 11 1575059',
     'Bishoftu:sunshaion': '+251 11 4308918',
     'Dessa': '+033 1117748',
+    'shashemane': '0461105440',
+    'mekele police': '+251344417695'
   };
 
   List<String> filteredList = [];
@@ -67,7 +69,7 @@ class _policecallState extends State<policecall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
+        title: Text('ወደ ፖሊስ ጥሪዎች(Police station calls)'),
       ),
       body: Column(
         children: <Widget>[
@@ -76,7 +78,7 @@ class _policecallState extends State<policecall> {
             child: TextField(
               onChanged: filterItems,
               decoration: InputDecoration(
-                labelText: 'Search',
+                labelText: 'find',
               ),
             ),
           ),

@@ -10,6 +10,9 @@ class watercall extends StatefulWidget {
 class _watercallState extends State<watercall> {
   final Map<String, String> fireList = {
     'Desse': '+0331118031',
+    'shashemane': '0461100392 ',
+    ' mekele ': '0344400791',
+    ' mekele': ' 6900',
   };
 
   List<String> filteredList = [];
@@ -54,7 +57,7 @@ class _watercallState extends State<watercall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
+        title: Text('ወደ ዉሀ ልማት ጥሪዎች'),
       ),
       body: Column(
         children: <Widget>[
@@ -63,7 +66,7 @@ class _watercallState extends State<watercall> {
             child: TextField(
               onChanged: filterItems,
               decoration: InputDecoration(
-                labelText: 'Search',
+                labelText: 'find',
               ),
             ),
           ),

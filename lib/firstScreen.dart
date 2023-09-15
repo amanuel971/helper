@@ -13,7 +13,7 @@ class firstScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('የአደጋ ጊዜ ጥሪዎች'),
+            title: Text('የአደጋ ጊዜ ጥሪዎች(emergency Time call)'),
             leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);

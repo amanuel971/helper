@@ -58,7 +58,7 @@ class _ethiotelecomcallState extends State<ethiotelecomcall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
+        title: Text('ethio telecom call'),
       ),
       body: Column(
         children: <Widget>[
@@ -67,7 +67,7 @@ class _ethiotelecomcallState extends State<ethiotelecomcall> {
             child: TextField(
               onChanged: filterItems,
               decoration: InputDecoration(
-                labelText: 'Search',
+                labelText: 'find',
               ),
             ),
           ),

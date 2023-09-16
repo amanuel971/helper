@@ -57,7 +57,7 @@ class _firecallState extends State<firecall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች'),
+        title: Text('የእሳት አደጋ ጊዜ ጥሪዎች(Fire brigade calls)'),
       ),
       body: Column(
         children: <Widget>[

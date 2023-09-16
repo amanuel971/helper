@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:helper/HomeScreen.dart';
-import 'package:helper/MarkDownPage.dart';
-import 'package:helper/firstScreen.dart';
-import 'package:helper/welcome.dart';
+import 'package:HELPER/HomeScreen.dart';
+import 'package:HELPER/MarkDownPage.dart';
+import 'package:HELPER/firstScreen.dart';
+import 'package:HELPER/welcome.dart';
 
 void main() {
   runApp(MaterialApp(

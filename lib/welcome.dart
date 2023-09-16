@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helper/information.dart';
-import 'package:helper/main.dart';
+import 'package:HELPER/information.dart';
+import 'package:HELPER/main.dart';
 
 class Welcome extends StatelessWidget {
   @override

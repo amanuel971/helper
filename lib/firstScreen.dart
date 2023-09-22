@@ -39,7 +39,7 @@ class ButtonLayout extends StatelessWidget {
           children: [
             CustomButton(
               text: ' የእሳት አደጋ ጊዜ ጥሪዎች(Fire brigade calls)',
-              color: Colors.blue,
+              color: Colors.red,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -49,7 +49,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የአንቡላንስ ጥሪዎች(Ambulance calls)',
-              color: Colors.green,
+              color: Colors.lightBlueAccent,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -59,7 +59,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የትራፊክ ፖሊስ ጥሪዎች(Traffic police calls)',
-              color: Colors.red,
+              color: Colors.orange,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -69,7 +69,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የፖሊስ ጣቢያ ጥሪዎች(Police stations calls)',
-              color: Colors.orange,
+              color: Colors.blue,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -79,7 +79,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የመብራት ሀይል ጥሪዎች(Power supply calls)',
-              color: Colors.red,
+              color: Colors.grey,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -89,7 +89,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የዉሀ ልማት ጥሪዎች(Water supply calls)',
-              color: Colors.purple,
+              color: Colors.white12,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -99,7 +99,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የethio telecom ጥሪዎች',
-              color: Colors.yellow,
+              color: Colors.green,
               onPressed: () {
                 Navigator.push(
                   context,

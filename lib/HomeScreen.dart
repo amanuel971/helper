@@ -79,7 +79,7 @@ class ButtonLayout extends StatelessWidget {
           children: [
             CustomButton(
               text: 'ለልብ ድካም(For heart failure)',
-              color: Colors.blue,
+              color: Colors.lightBlue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
@@ -95,7 +95,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'የወባ በሽታ(For Malaria)',
-              color: Colors.green,
+              color: Colors.lightBlue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
@@ -109,8 +109,53 @@ class ButtonLayout extends StatelessWidget {
               },
             ),
             CustomButton(
+              text: 'ለሚጥል በሽታ(For Eplipesy)',
+              color: Colors.lightBlue,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'Eplipesy.md',
+                      title: 'ለሚጥል በሽታ(for eplipesy)',
+                    );
+                  },
+                ));
+              },
+            ),
+            CustomButton(
+              text: 'ለስኳር በሽታ(For Doabets)',
+              color: Colors.lightBlue,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'diabets.md',
+                      title: 'ለስኳር በሽታ(for diabets)',
+                    );
+                  },
+                ));
+              },
+            ),
+            CustomButton(
+              text: 'ለአስም(For Asthema)',
+              color: Colors.lightBlue,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const MarkDownPage(
+                      //mdName: 'apple.md',
+                      mdName: 'Asthema.md',
+                      title: 'ለአስም(for asthema)',
+                    );
+                  },
+                ));
+              },
+            ),
+            CustomButton(
               text: 'ለደም ግፊት(For Blood pressuer)',
-              color: Colors.green,
+              color: Colors.lightBlue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
@@ -126,7 +171,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'ለደም ማነስ(For Anemia)',
-              color: Colors.orange,
+              color: Colors.lightBlue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
@@ -141,7 +186,7 @@ class ButtonLayout extends StatelessWidget {
             ),
             CustomButton(
               text: 'ለደም ብዛት(For Blood count)',
-              color: Colors.red,
+              color: Colors.lightBlue,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
@@ -149,51 +194,6 @@ class ButtonLayout extends StatelessWidget {
                       //mdName: 'apple.md',
                       mdName: 'bloodcount.md',
                       title: 'ለደም ብዛት(for blood count)',
-                    );
-                  },
-                ));
-              },
-            ),
-            CustomButton(
-              text: 'ለሚጥል በሽታ(For Eplipesy)',
-              color: Colors.purple,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'Eplipesy.md',
-                      title: 'ለሚጥል በሽታ(for eplipesy)',
-                    );
-                  },
-                ));
-              },
-            ),
-            CustomButton(
-              text: 'ለስኳር በሽታ(For Doabets)',
-              color: Colors.yellow,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'diabets.md',
-                      title: 'ለስኳር በሽታ(for diabets)',
-                    );
-                  },
-                ));
-              },
-            ),
-            CustomButton(
-              text: 'ለአስም(For Asthema)',
-              color: Colors.teal,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const MarkDownPage(
-                      //mdName: 'apple.md',
-                      mdName: 'Asthema.md',
-                      title: 'ለአስም(for asthema)',
                     );
                   },
                 ));
